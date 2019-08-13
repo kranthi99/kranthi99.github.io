@@ -69,6 +69,8 @@ h1 {
 h2 {
     font-size: 30px;
 	color: #232323;
+    font-family: monospace;
+    font-weight: bold;
 }
 h3 {
     margin: 30px;
@@ -450,7 +452,15 @@ input::-webkit-input-placeholder {
 -------- ABOUT AREA CSS START --------
 ---------------------------------------*/
 .about-area {
+    background: url(../img/sw2.svg) no-repeat center / cover;
+    position: relative;
+    background-attachment: fixed;
     text-align: center;
+    z-index: 1;
+    color: #fff;
+}
+.about-area h4{
+    font-weight: bold;
 }
 .single-about-box {
 	padding: 25px;
@@ -504,6 +514,9 @@ input::-webkit-input-placeholder {
 	z-index: -1;
 	position: absolute;
 }
+.feature-area .icofont{
+    color: white;
+}
 .feature-area .sec-title ,
 .feature-area .sec-title h2 {
     color: #fff;
@@ -522,6 +535,11 @@ input::-webkit-input-placeholder {
 }
 .feature-box-info {
     flex: 5;
+}
+.feature-box-info:hover h4{
+     -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
 }
 .feature-box-icon {
     flex: 1;
@@ -556,6 +574,23 @@ input::-webkit-input-placeholder {
 ---------------------------------------*/
 .showcase-area {
 	padding-bottom: 50px;
+    background: url(../img/sw9.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+    color: black;
+}
+.showcase-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000529; /* Old browsers */
+    background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
+    opacity: 0.85;
+    z-index: -1;
 }
 .single-showcase-box {
 	padding: 0 0 40px;
@@ -565,7 +600,9 @@ input::-webkit-input-placeholder {
 }
 .single-showcase-box h4 {
 	font-size: 20px;
+    font-family: fantasy;
 }
+
 /*--------------------------------------
 --------- SHOWCASE AREA CSS END --------
 ---------------------------------------*/
@@ -574,26 +611,12 @@ input::-webkit-input-placeholder {
 ---------- VIDEO AREA CSS START --------
 ---------------------------------------*/
 .video-area {
-    background: url(../img/svd.jpg) no-repeat center / cover;
+    background: url(../img/sw10.jpg) no-repeat center / cover;
     position: relative;
 	background-attachment: fixed;
     text-align: center;
     z-index: 1;
     color: #fff;
-}
-.video-area::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-	background: #000529; /* Old browsers */
-	background: -moz-linear-gradient(left, #000529 1%, #002055 24%, #005db5 67%, #0074d9 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #000529 1%,#002055 24%,#005db5 67%,#0074d9 100%);
-    opacity: 0.85;
-    z-index: -1;
 }
 .video-popup i {
     display: inline-block;
@@ -905,6 +928,20 @@ NG AREA CSS START --------
 /*--------------------------------------
 -------- TEAM AREA CSS START --------
 ---------------------------------------*/
+.team-area {
+    background: url(../img/sw1.svg) no-repeat center / cover;
+    position: relative;
+    background-attachment: fixed;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+}
+.team-area .icofont{
+    color: black;
+}
+.team-area p{
+    color: black;
+}
 .single-team-member {
     text-align: center;
     box-shadow: 0 2px 15px -5px #222;
@@ -915,6 +952,7 @@ NG AREA CSS START --------
 }
 .team-member-info {
     padding: 20px 10px;
+    color: black;
 }
 .team-member-img {
     position: relative;
@@ -1112,9 +1150,10 @@ h4.post-title a {
 }
 .contact-form p{
     margin-bottom: 33px;
-    font-size: 33px;
+    font-size: 35px;
     color: black;
     text-align: left;
+    font-family: impact;
 }
 .contact-form input,
 .contact-form textarea,
@@ -1172,6 +1211,9 @@ h4.post-title a {
 }
 .copyright-area {
     text-align: center;
+}
+.copyright-area .icofont{
+    color: #0074da;
 }
 .copyright-area ul li {
     display: inline-block;
